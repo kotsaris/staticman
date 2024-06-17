@@ -1,6 +1,7 @@
 version: '2'
 services:
-  kotsaris.azurecr.io/staticman:
+  staticman:
+    image: kotsaris.azurecr.io/staticman:latest
     build: .
     env_file: .env
     ports:

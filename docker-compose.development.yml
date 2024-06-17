@@ -1,6 +1,6 @@
 version: '2'
 services:
-  kotsaris.azurecr.io/staticman:
+  staticman:
     extends:
       file: docker-compose.yml
       service: staticman
