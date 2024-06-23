@@ -1,0 +1,12 @@
+<html>
+    <form method="POST" action="https://codesenninstatics.azurewebsites.net/v3/entry/github/kotsaris/codesennin/main/comments">
+      <!-- <form method="POST" action="http://localhost:8080/v3/entry/github/kotsaris/codesennin/main/comments"> -->
+        <!-- <input name="options[redirect]" type="hidden" value="https://my-site.com"> -->
+        <!-- e.g. "2016-01-02-this-is-a-post" -->
+        <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+        <label><input name="fields[name]" type="text">Name</label>
+        <label><input name="fields[email]" type="email">E-mail</label>
+        <label><textarea name="fields[message]"></textarea>Message</label>
+        <button type="submit">Go!</button>
+      </form>
+</html>

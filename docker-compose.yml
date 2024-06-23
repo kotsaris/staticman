@@ -3,12 +3,6 @@ services:
   staticman:
     image: kotsaris.azurecr.io/staticman:latest
     build: .
-    env_file: .env
     ports:
-      - '8080:3000'
+      - '8080:80'
     restart: unless-stopped
-    environment:
-      NODE_ENV: production
-      PORT: 3000
-      GITHUB_TOKEN: #insert your GitHub token here
-      RSA_PRIVATE_KEY: ""
