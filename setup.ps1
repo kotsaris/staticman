@@ -28,7 +28,7 @@ docker-compose -f docker-compose.yml push
 az webapp delete --name $appName --resource-group $env:resourceGroup --yes
 az appservice plan delete --name $env:staticmanAppServicePlan --resource-group $env:resourceGroup --yes
 
-az appservice plan create --name $env:staticmanAppServicePlan --resource-group $env:resourceGroup --sku F1 --is-linux
+az appservice plan create --name $env:staticmanAppServicePlan --resource-group $env:resourceGroup --sku B1 --is-linux
 az webapp create --resource-group $env:resourceGroup `
     --plan $env:staticmanAppServicePlan `
     --name $appName `
